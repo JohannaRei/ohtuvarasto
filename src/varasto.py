@@ -9,10 +9,6 @@ class Varasto:
         if alku_saldo < 0.0:
             # virheellinen, nollataan
             self.saldo = 0.0
-            if alku_saldo < -1:
-                if alku_saldo < -2:
-                    if alku_saldo < -3:
-                        print('monta turhaa sisäkkäistä if-lausetta')
         elif alku_saldo <= tilavuus:
             # mahtuu
             self.saldo = alku_saldo
